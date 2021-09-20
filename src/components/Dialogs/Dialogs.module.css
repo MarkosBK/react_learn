@@ -1,0 +1,54 @@
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dialogs {
+  min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background-color: #393E46;
+  border-top: 3px solid #8cffe2;
+  border-bottom: 3px solid #8cffe2;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.dialogs::-webkit-scrollbar {
+  width: 0;
+}
+
+.dialogs {
+  -ms-overflow-style: none;
+}
+
+.dialogs {
+  overflow: -moz-scrollbars-none;
+}
+
+.messages {
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
+  background-color: #EEEEEE;
+  max-height: 100%;
+}
+/*# sourceMappingURL=Dialogs.module.css.map */

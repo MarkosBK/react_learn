@@ -1,0 +1,24 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+    padding: 20px;
+    color: $fontlight;
+}

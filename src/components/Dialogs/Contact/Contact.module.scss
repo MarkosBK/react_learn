@@ -1,0 +1,60 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+.dialog{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: $primary;
+    &:hover{
+        background-color: rgba($color: $dark, $alpha: 0.5)
+    }
+    min-width: 0;
+    width: 100%;
+}
+
+.avatar{
+    flex: 0 0 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 40px;
+    min-width: 0;
+}
+
+.info .name{
+    color: $fontlight;
+    font-weight: bold;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.info .lastMessage{
+    color: rgb(206, 198, 198);
+    font-size: 15px;
+    -webkit-line-clamp: 1; /* количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}

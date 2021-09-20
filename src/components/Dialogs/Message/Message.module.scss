@@ -1,0 +1,22 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+.message{
+    padding: 10px;
+    background: linear-gradient(45deg, $dark 0%, $dark 0%, $primary 100%);
+    font-size: 18px;
+    color: $fontlight;
+    border-radius: 10px;
+    width: auto;
+}
+
+.messageBlock{
+    padding: 10px;
+    margin-bottom: 10px;
+}

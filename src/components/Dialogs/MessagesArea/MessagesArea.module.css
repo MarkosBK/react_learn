@@ -1,0 +1,72 @@
+.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.textarea {
+  outline: none;
+  padding: 5px;
+  color: #eeeeee;
+  font-size: 17px;
+  resize: none;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #222831;
+}
+
+.sendform {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+  width: 100%;
+  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sendbutton {
+  padding: 10px;
+  background-color: #393E46;
+  color: #eeeeee;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-size: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+}
+
+.sendbutton:hover {
+  background-color: #222831;
+}
+/*# sourceMappingURL=MessagesArea.module.css.map */

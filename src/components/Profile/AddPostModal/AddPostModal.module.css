@@ -1,0 +1,13 @@
+.text {
+  border: 1px solid gray;
+  width: 100%;
+  outline: 0;
+  height: 100%;
+  font-size: 17px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+  resize: none;
+}
+/*# sourceMappingURL=AddPostModal.module.css.map */

@@ -1,0 +1,41 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+
+.content{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.dialogs{
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 6;
+    background-color: $primary;
+    border-top: 3px solid $colorLight;
+    border-bottom: 3px solid $colorLight;
+    overflow: auto;
+    max-height: 100%;
+}
+.dialogs::-webkit-scrollbar { width: 0; }
+.dialogs { -ms-overflow-style: none; }
+.dialogs { overflow: -moz-scrollbars-none; }
+
+
+
+.messages{
+    flex: 12;
+    background-color: $light;
+    max-height: 100%;
+}

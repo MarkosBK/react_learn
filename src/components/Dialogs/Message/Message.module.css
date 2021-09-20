@@ -1,0 +1,14 @@
+.message {
+  padding: 10px;
+  background: linear-gradient(45deg, #222831 0%, #222831 0%, #393E46 100%);
+  font-size: 18px;
+  color: #eeeeee;
+  border-radius: 10px;
+  width: auto;
+}
+
+.messageBlock {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Message.module.css.map */

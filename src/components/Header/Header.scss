@@ -1,0 +1,254 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+
+  .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $dark;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+    &__body{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+    }
+
+    &__list{
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__list li{
+        list-style: none;
+        height: 100%;
+    }
+
+    &__link{
+        color: $fontlight;
+        text-transform: uppercase;
+        font-size: 17px;
+        text-decoration: none;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: .1s;
+        padding: 0 15px 5px 15px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $primary;
+            border-top: 5px solid $colorLight;
+            color: $colorLight;
+        }
+    }
+
+    &__link.active{
+      background-color: $primary;
+      border-top: 5px solid $colorLight;
+      color: $colorLight;
+    }
+
+    &__logo{
+        flex: 0 0 180px;
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+        color: $fontlight;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        padding-bottom: 5px;
+        transition: .5s;
+        &:hover{
+            color: $colorLight;
+        }
+    }
+
+    &__logo img{
+        max-width: 100%;
+        display: block;
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    &__text p {
+        margin: 0 0 20px 0;
+    }
+
+    &__burger{
+        display: none;
+    }
+
+    &__contact{
+        display: none;
+    }
+
+    &__menu{
+        height: 100%;
+    }
+
+    &__list{
+        height: 100%;
+    }
+  }
+  
+  .container{
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0 10px;
+  }
+            
+  .content{
+    padding: 100px 30px 0 30px;
+  }
+    
+  @media (max-width: 767px) {
+    .header__burger{
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+    }
+  
+    .header__burger::before,
+    .header__burger::after{
+      content: '';
+      background-color: $colorLight;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+  
+    .header__burger span{
+      position: absolute;
+      background-color: $colorLight;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: .3s;
+    }
+  
+    .header__burger::before{
+      top:0;
+      transition: .3s;
+    }
+    .header__burger::after{
+      bottom: 0;
+      transition: .3s;
+    }
+  
+    .header__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(16, 16, 16, 1) 0%, rgba(18, 54, 51, 1) 0%, rgba(16, 16, 16, 1) 100%);
+      padding: 70px 10px 20px 10px;
+      transition: .3s;
+      overflow: auto;
+    }
+    .header__menu.active{
+      top: 0;
+    }
+    .header__body{
+      height: 40px;
+    }
+  
+    .header__logo{
+      flex: 0 0 180px;
+    }
+  
+    .header__list{
+      display: block;
+    }
+  
+    .header__list li{
+      margin: 0 0 20px 0;
+      height: 60px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .header__burger.active::before{
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    .header__burger.active::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    .header__burger.active span{
+      transform: scale(0);
+    }
+  
+    .content{
+      padding: 70px 0 0 0;
+    }
+  
+    body.lock{
+      overflow: hidden;
+    }
+  
+    .header__link{
+      font-size: 20px;
+      height: 60px;
+    }
+  }
+    
+  @media (max-width: 767px) {
+    .header__contact{
+      display: flex;
+    }
+  
+    .header__contact-list{
+      display: flex;
+      position: relative;
+      z-index: 2;
+    }
+    .header__contact-list li{
+      list-style: none;
+      margin-left: 15px;
+    }
+    .header__contact-list li:first-child{
+      margin-left: 0;
+    }
+    .header__contact-link img{
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+  }

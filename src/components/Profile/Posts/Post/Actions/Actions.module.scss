@@ -1,0 +1,37 @@
+$primary: #393E46 !global;
+$light: #EEEEEE !global;
+$color: #108068 !global;
+$colorLight: #8cffe2 !global;
+$dark: #222831 !global;
+
+$fontlight: #eeeeee !global;
+$fontdark: #303030 !global;
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 160px;
+    height: 100%;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.icon{
+    // width: 23px;
+    height: 23px;
+}
+
+.counter{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
